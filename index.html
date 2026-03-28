@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOMIO — Global Luxury Real Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- Toast -->
+    <div id="toast"><strong>Subscribed</strong>Welcome to DOMIO. Expect only the finest.</div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#properties" class="mobile-menu-link">Properties</a>
+      <a href="#destinations" class="mobile-menu-link">Destinations</a>
+      <a href="#why" class="mobile-menu-link">About</a>
+      <a href="#team" class="mobile-menu-link">Our Team</a>
+      <a href="#newsletter" class="mobile-menu-link">Contact</a>
+    </div>
+
+    <!-- Nav -->
+    <nav id="navbar">
+      <a href="#" class="nav-logo">DOMIO<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#properties">Properties</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#why">About</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#newsletter">Contact</a></li>
+      </ul>
+      <div class="nav-cta-wrap">
+        <a href="#search-section" class="nav-cta">Find Property</a>
+      </div>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </nav>
+
+    <!-- ══ HERO ══ -->
+    <section id="hero">
+      <div class="hero-bg-img">
+        <img src="assets/images/hero.png" alt="Hero" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow">Global Luxury Real Estate</div>
+        <h1 class="hero-title">
+          Find your<br />place in the
+          <em>world.</em>
+        </h1>
+        <p class="hero-sub">
+          DOMIO curates the world's most exceptional residential properties. From Alpine chalets to Maldivian over water villas. Every home, a
+          singular statement.
+        </p>
+        <div class="hero-btns">
+          <a href="#search-section" class="btn-gold">Search Properties</a>
+          <a href="#destinations" class="btn-outline">Explore Destinations</a>
+        </div>
+      </div>
+
+      <!-- Live ticker -->
+      <div class="hero-ticker">
+        <div class="ticker-track" id="tickerTrack"></div>
+      </div>
+
+      <div class="scroll-hint">
+        <div class="scroll-line"></div>
+        <p>Scroll</p>
+      </div>
+    </section>
+
+    <!-- ══ NUMBERS ══ -->
+    <section id="numbers">
+      <div class="numbers-grid">
+        <div class="number-item reveal">
+          <div class="number-val">2,400<sup>+</sup></div>
+          <div class="number-key">Active Listings</div>
+        </div>
+        <div class="number-item reveal rd1">
+          <div class="number-val">47</div>
+          <div class="number-key">Countries</div>
+        </div>
+        <div class="number-item reveal rd2">
+          <div class="number-val">$18<sup>B+</sup></div>
+          <div class="number-key">In Sales Volume</div>
+        </div>
+        <div class="number-item reveal rd3">
+          <div class="number-val">98<sup>%</sup></div>
+          <div class="number-key">Client Satisfaction</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SEARCH ══ -->
+    <section id="search-section">
+      <div class="search-label">Discover Your Next Home</div>
+      <div class="search-bar">
+        <div class="search-field">
+          <label>Location</label>
+          <select>
+            <option>Any Destination</option>
+            <option>Aspen, USA</option>
+            <option>Côte d'Azur, France</option>
+            <option>Amalfi Coast, Italy</option>
+            <option>Maldives</option>
+            <option>Dubai, UAE</option>
+            <option>Mykonos, Greece</option>
+            <option>Tokyo, Japan</option>
+            <option>Cape Town, South Africa</option>
+            <option>Queenstown, New Zealand</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label>Property Type</label>
+          <select>
+            <option>All Types</option>
+            <option>Private Villa</option>
+            <option>Penthouse</option>
+            <option>Estate</option>
+            <option>Chalet</option>
+            <option>Island Residence</option>
+            <option>Townhouse</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label>Price Range</label>
+          <select>
+            <option>Any Budget</option>
+            <option>$1M – $5M</option>
+            <option>$5M – $15M</option>
+            <option>$15M – $50M</option>
+            <option>$50M+</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label>Bedrooms</label>
+          <select>
+            <option>Any</option>
+            <option>2+</option>
+            <option>3+</option>
+            <option>4+</option>
+            <option>6+</option>
+          </select>
+        </div>
+        <button class="search-btn" id="searchBtn">Search</button>
+      </div>
+    </section>
+
+    <!-- ══ PROPERTIES ══ -->
+    <section id="properties">
+      <div class="section-header reveal">
+        <div>
+          <div class="tag">Handpicked Selection</div>
+          <h2 class="section-title" style="margin-bottom: 0">Featured <em>Properties</em></h2>
+        </div>
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="villa">Villa</button>
+          <button class="filter-tab" data-filter="penthouse">Penthouse</button>
+          <button class="filter-tab" data-filter="chalet">Chalet</button>
+          <button class="filter-tab" data-filter="estate">Estate</button>
+        </div>
+      </div>
+      <div class="properties-grid reveal" id="propertiesGrid"></div>
+      <div class="load-more reveal">
+        <button class="btn-outline" id="loadMoreBtn">Load More Properties</button>
+      </div>
+    </section>
+
+    <!-- ══ DESTINATIONS ══ -->
+    <section id="destinations">
+      <div class="dest-header">
+        <div class="reveal">
+          <div class="tag">Where We Operate</div>
+          <h2 class="section-title" style="margin-bottom: 0.6rem">The world's most <em>sought-after</em> addresses</h2>
+        </div>
+        <p class="section-body reveal" style="max-width: 340px; margin-bottom: 0">
+          From the French Riviera to the Japanese countryside, DOMIO is present wherever excellence in living is found.
+        </p>
+      </div>
+      <div class="world-grid reveal" id="worldGrid"></div>
+    </section>
+
+    <!-- ══ WHY DOMIO ══ -->
+    <section id="why">
+      <div class="why-inner">
+        <div class="why-visual reveal">
+          <div class="why-stat-float">
+            <div class="why-stat-num">22<sup style="font-size: 0.8rem; color: var(--gold)">yr</sup></div>
+            <div class="why-stat-label">Est. 2003</div>
+          </div>
+          <div class="why-img-main">
+            <img src="assets/images/interior.png" alt="Interior Photography" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="why-img-float">
+            <img src="assets/images/exterior.png" alt="Exterior detail" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+        </div>
+        <div class="reveal rd1">
+          <div class="tag">Why DOMIO</div>
+          <h2 class="section-title">We don't list homes.<br />We place <em>legacies.</em></h2>
+          <p class="section-body">
+            Founded in 2003, DOMIO was born from the belief that extraordinary properties deserve extraordinary stewardship. We operate at the
+            intersection of architecture, culture, and finance — advising clients whose decisions are measured not in years, but in generations.
+          </p>
+          <ul class="pillar-list">
+            <li class="pillar-item">
+              <span class="pillar-num">01</span>
+              <div>
+                <div class="pillar-title">Global Network, Local Mastery</div>
+                <div class="pillar-desc">
+                  47 countries, 220+ local experts. We know every street, zoning law, and nuance of every market we serve.
+                </div>
+              </div>
+            </li>
+            <li class="pillar-item">
+              <span class="pillar-num">02</span>
+              <div>
+                <div class="pillar-title">Discreet by Design</div>
+                <div class="pillar-desc">
+                  Many of our finest listings never appear publicly. Our off-market portfolio is available exclusively to DOMIO clients.
+                </div>
+              </div>
+            </li>
+            <li class="pillar-item">
+              <span class="pillar-num">03</span>
+              <div>
+                <div class="pillar-title">End-to-End Advisory</div>
+                <div class="pillar-desc">
+                  From acquisition through interior design, legal structuring, and estate management — one trusted partner throughout.
+                </div>
+              </div>
+            </li>
+            <li class="pillar-item">
+              <span class="pillar-num">04</span>
+              <div>
+                <div class="pillar-title">Curated, Never Compromised</div>
+                <div class="pillar-desc">
+                  We accept fewer than 3% of properties submitted to us. Every listing in our portfolio meets our standards unconditionally.
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ TESTIMONIALS ══ -->
+    <section id="testimonials">
+      <div class="testi-header">
+        <div class="tag reveal" style="justify-content: center">Client Stories</div>
+        <h2 class="section-title reveal" style="font-size: clamp(1.8rem, 3.5vw, 2.8rem)">Trusted by the world's <em>most discerning</em> buyers</h2>
+      </div>
+      <div class="testi-grid reveal" id="testiGrid"></div>
+    </section>
+
+    <!-- ══ TEAM ══ -->
+    <section id="team">
+      <div class="team-header">
+        <div class="reveal">
+          <div class="tag">The People Behind DOMIO</div>
+          <h2 class="section-title" style="margin-bottom: 0">Meet our <em>global</em> advisors</h2>
+        </div>
+        <a href="#newsletter" class="btn-outline reveal">Join Our Team</a>
+      </div>
+      <div class="team-grid reveal" id="teamGrid"></div>
+    </section>
+
+    <!-- ══ NEWSLETTER / CONTACT ══ -->
+    <section id="newsletter">
+      <div class="newsletter-inner">
+        <div class="tag reveal" style="justify-content: center">Stay Informed</div>
+        <h2 class="section-title reveal" style="font-size: clamp(2rem, 4vw, 3.2rem)">The world's finest<br />properties, <em>first.</em></h2>
+        <p class="section-body reveal" style="font-size: 0.84rem; text-align: center; margin-bottom: 0">
+          Join 14,000+ subscribers receiving curated listings, market intelligence, and off-market opportunities directly to their inbox.
+        </p>
+        <div class="newsletter-form reveal">
+          <input class="newsletter-input" type="email" placeholder="Your email address" id="nlEmail" />
+          <button class="newsletter-btn" id="subscribeBtn">Subscribe</button>
+        </div>
+        <p class="reveal" style="font-size: 0.65rem; color: var(--muted2); margin-top: 1rem; text-align: center; letter-spacing: 0.06em">
+          No spam. Unsubscribe any time. We respect your privacy.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer>
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">DOMIO<span>.</span></div>
+          <p class="footer-desc">The world's leading curator of ultra-prime residential real estate, operating across 47 countries since 2003.</p>
+          <div class="footer-license">Licensed Real Estate Broker · RERA Certified · Member of Luxury Portfolio International</div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#properties">All Properties</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#">New Listings</a></li>
+            <li><a href="#">Off-Market</a></li>
+            <li><a href="#">Price Reduced</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#why">About DOMIO</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#">Press & Awards</a></li>
+            <li><a href="#">Partnerships</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="#">Property Management</a></li>
+            <li><a href="#">Investment Advisory</a></li>
+            <li><a href="#">Interior Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Fair Housing</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 DOMIO Global Real Estate. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">in</a>
+          <a href="#" class="social-link">Li</a>
+          <a href="#" class="social-link">X</a>
+          <a href="#" class="social-link">Yt</a>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

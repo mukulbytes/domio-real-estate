@@ -1,0 +1,155 @@
+// ── Data ───────────────────────────────────────────────
+export const properties = [
+    {
+        name: "Villa Lumière",
+        loc: "Côte d Azur, France",
+        type: "villa",
+        beds: 6,
+        baths: 7,
+        sqft: "8,400",
+        price: "€22,500,000",
+        badge: "New",
+        img: "Coastal Villa — French Riviera",
+    },
+    {
+        name: "Sky Penthouse One",
+        loc: "Dubai, UAE",
+        type: "penthouse",
+        beds: 4,
+        baths: 5,
+        sqft: "5,200",
+        price: "AED 48,000,000",
+        badge: "Featured",
+        img: "Ultra-Modern Penthouse — Dubai",
+    },
+    {
+        name: "Chalet Blanc",
+        loc: "Verbier, Switzerland",
+        type: "chalet",
+        beds: 8,
+        baths: 9,
+        sqft: "11,000",
+        price: "CHF 18,750,000",
+        badge: "Exclusive",
+        img: "Alpine Chalet — Swiss Alps",
+    },
+    {
+        name: "The Whitmore Estate",
+        loc: "Aspen, USA",
+        type: "estate",
+        beds: 5,
+        baths: 6,
+        sqft: "6,200",
+        price: "$14,750,000",
+        badge: "",
+        img: "Mountain Estate — Aspen",
+    },
+    {
+        name: "Casa Amalfi",
+        loc: "Amalfi Coast, Italy",
+        type: "villa",
+        beds: 5,
+        baths: 5,
+        sqft: "4,800",
+        price: "€9,800,000",
+        badge: "",
+        img: "Cliffside Villa — Amalfi",
+    },
+    {
+        name: "Indigo Residences",
+        loc: "Mykonos, Greece",
+        type: "villa",
+        beds: 7,
+        baths: 8,
+        sqft: "7,600",
+        price: "€16,200,000",
+        badge: "New",
+        img: "Cycladic Villa — Mykonos",
+    },
+    {
+        name: "The Meridian",
+        loc: "Cape Town, South Africa",
+        type: "penthouse",
+        beds: 3,
+        baths: 4,
+        sqft: "4,100",
+        price: "R 95,000,000",
+        badge: "",
+        img: "Ocean-view Penthouse — Cape Town",
+    },
+    {
+        name: "Sakura House",
+        loc: "Hakone, Japan",
+        type: "estate",
+        beds: 4,
+        baths: 4,
+        sqft: "3,900",
+        price: "¥ 1,100,000,000",
+        badge: "Featured",
+        img: "Traditional-modern Estate — Japan",
+    },
+    {
+        name: "Reef Retreat",
+        loc: "North Malé Atoll, Maldives",
+        type: "villa",
+        beds: 6,
+        baths: 7,
+        sqft: "6,800",
+        price: "$28,000,000",
+        badge: "Exclusive",
+        img: "Over-Water Villa — Maldives",
+    },
+];
+
+export const destinations = [
+    { city: "Côte d Azur", country: "France", count: 84, img: "French Riviera coastline aerial" },
+    { city: "Dubai", country: "UAE", count: 217, img: "Dubai skyline at dusk" },
+    { city: "Aspen", country: "United States", count: 39, img: "Aspen mountain valley" },
+    { city: "Amalfi Coast", country: "Italy", count: 62, img: "Amalfi cliffside village" },
+    { city: "Mykonos", country: "Greece", count: 55, img: "Mykonos whitewashed villas" },
+    { city: "Verbier", country: "Switzerland", count: 31, img: "Swiss Alps winter panorama" },
+    { city: "Cape Town", country: "South Africa", count: 48, img: "Table Mountain aerial" },
+    { city: "Maldives", country: "Indian Ocean", count: 26, img: "Maldivian over-water bungalows" },
+];
+
+export const testimonials = [
+    {
+        quote:
+            "DOMIO found us a property in Mykonos we never knew existed. The transaction was handled with a level of discretion and expertise that exceeded every expectation.",
+        name: "Alexandra V.",
+        role: "Entrepreneur — London",
+        initials: "AV",
+    },
+    {
+        quote:
+            "From our first conversation to the keys in our hand, DOMIO's team treated our acquisition not as a transaction, but as a privilege. Truly unmatched.",
+        name: "Hiroshi T.",
+        role: "Investment Director — Tokyo",
+        initials: "HT",
+    },
+    {
+        quote:
+            "We purchased our Amalfi villa sight unseen. DOMIO made that possible — and the property surpassed everything we'd imagined. Extraordinary service.",
+        name: "Marco & Elisa B.",
+        role: "Private Collectors — Milan",
+        initials: "MB",
+    },
+];
+
+export const team = [
+    { name: "Catherine Ashford", role: "Senior Partner", markets: "USA · Canada · Switzerland", img: "Female agent portrait — Aspen" },
+    { name: "Jean-Pierre Morel", role: "Director, Europe", markets: "France · Italy · Monaco", img: "Male agent portrait — Paris" },
+    { name: "Amara Al-Rashid", role: "Head of MENA", markets: "UAE · Qatar · Saudi Arabia", img: "Female agent portrait — Dubai" },
+    { name: "Kenji Nakamura", role: "Asia Pacific Lead", markets: "Japan · Singapore · NZ", img: "Male agent portrait — Tokyo" },
+];
+
+export const tickerItems = [
+    { loc: "Côte d'Azur", price: "€22.5M" },
+    { loc: "Dubai", price: "AED 48M" },
+    { loc: "Verbier", price: "CHF 18.75M" },
+    { loc: "Aspen", price: "$14.75M" },
+    { loc: "Mykonos", price: "€16.2M" },
+    { loc: "Maldives", price: "$28M" },
+    { loc: "Amalfi Coast", price: "€9.8M" },
+    { loc: "Cape Town", price: "R 95M" },
+];
